@@ -1,0 +1,31 @@
+.custom-bg {
+    background-color: #75aae3;
+}
+
+.navbar-logo {
+    width: 100px;
+    height: 50px;
+}
+
+.btn-bg, .org-color {
+    background-color: rgb(255, 170, 12);
+    border-color: black;
+}
+
+.background-img {
+    background-image: url('/images/audi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.background-logo {
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
