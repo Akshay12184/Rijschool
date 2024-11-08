@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rijschool Samen op Weg</title>
-    <!--todo: add the meta data-->
-
-    <!--Bootstrap imports-->
+    <!-- Bootstrap imports -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!--JQuery imports to make the calander work and display-->
+    <!-- jQuery and Datepicker imports -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
@@ -20,97 +18,153 @@
 </head>
 <body class="custom-bg">
 
-<!--  -->
-    <div class="background-img bg-light">
-        <nav class="navbar navbar-expand-lg bg-primary text-black">
-            <div class="container-fluid">
-                <a class="navbar-logo">
-                    <img class="logo" src="/images/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto d-flex justify-content-evenly w-100">
-                        <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#">Intake</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#">Tarieven</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#">Spoedcursus</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#">Locaties</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<div class="background-img bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo" src="/images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="d-flex justify-content-start ps-3 pb-3 mt-auto">
-            <button class="btn btn-bg fw-bold rounded-2 shadow">Plan nu je intake</button>
-        </div>
-    </div>
-
-<!-- the middle section where you can use the form to sign up for an intake-->
-    <div class="d-flex justify-content-evenly pt-3">
-        <p class="bg-light rounded-2 p-2">Rijbewijs halen bij samen op weg?</p>
-        <p class="bg-light rounded-2 p-2">Kwaliteit lessen bij samen op weg</p>
-        <p class="org-color rounded-2 p-2">Schrijf je meteen in voor een intake!</p>
-    </div>
-
-    <div class="d-flex justify-content-evenly mt-3">
-        <div class="bg-light rounded-3 p-3" style="width: 400px; max-width: 450px; height: 325px;">
-            <p>Rijschool Samen op Weg is een rijschool die het anders doet. Jarenlange ervaring in het vak heeft ons geleerd dat veel rijscholen niet efficiënt te werk gaan.
-                Het gebeurt te vaak dat leerlingen grote bedragen neerleggen voor lespakketten die niet passen bij hun vaardigheden en behoeften.
-                Zo loopt u het risico dat u veel tijd en geld kwijt bent, om uiteindelijk alsnog zonder rijbewijs de deur uit te lopen – of te fietsen.
-                Dit systeem levert rijscholen gigantisch veel winst op, maar is voor u als klant ontzettend onvoordelig. 
-                wij zorgen ervoor dat dit niet gebeurd.
-            </p>
-        </div>
-        <div class="bg-light rounded-3 p-3" style="width: 400px; max-width: 450px; height: 350px;">
-            <p>Om zoveel mogelijk uit uw lessen te halen zit u altijd in de auto met één à twee andere leerlingen.
-                Zo spendeert u nog meer tijd in de auto, wat ervoor zorgt dat u zich meer op uw gemak voelt en met meer zekerheid achter het stuur zit.
-                Daarnaast doet u nuttige kennis en rijvaardigheid op dankzij de feedback die uw medeleerlingen van de instructeur krijgen.
-                Tijdens de gevarieerde lessen zorgen onze instructeurs dat u leert omgaan met een groot aantal verschillende scenario’s om zo optimaal voorbereid de weg op te gaan.
-                Deze manier van rijden bereidt u bijzonder goed voor op het CBR rijexamen.
-            </p>
-        </div>
-        <div class="bg-primary rounded-3 p-3 text-light" style="width: 400px; max-width: 450px;">
-            <form>
-                <label for="name" class="form-label">Naam</label>
-                <input type="text" class="form-control" id="NaamInput" placeholder="Naam">
-
-                <label for="telefoon" class="form-label">Telefoon</label>
-                <input type="tel" class="form-control" id="NummerInput" placeholder="Telefoon nmr">
-
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="EmailInput" placeholder="naam@voorbeeld.com">
-
-                <label for="woonplaats" class="form-label">Woonplaats</label>
-                <input type="text" class="form-control" id="WoonplaatsInput" placeholder="Woonplaats">
-
-                <label for="calendar" class="form-label">Calendar</label>
-                <input type="text" class="form-control datepicker" id="CalendarInput" placeholder="Select date">
-            </form>
-            <button class="btn btn-bg rounded-2 mt-3 text-light">Plan je intake</button>
-        </div>
-    </div>
-
-    <div class="container d-flex justify-content-evenly">
-        <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/images/audi.png" class="d-block w-100" alt="img1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/audi.png" class="d-block w-100" alt="img2">
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/audi.png" class="d-block w-100" alt="img3">
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Intake</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Tarieven</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Spoedcursus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Locaties</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="d-flex justify-content-end mt-2 bg-light width-100">
-            google reviews
-            <img class="logo" src="/images/logo.png" alt="rijschool logo">
+    </nav>
+    
+    
+
+    <div class="d-flex justify-content-start ps-3 pb-3 mt-auto">
+        <button class="btn btn-bg fw-bold rounded-2 shadow w-10 w-md-auto">Plan nu je intake</button>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-evenly pt-3">
+    <p class="bg-light rounded-2 p-2">Rijbewijs halen bij samen op weg?</p>
+    <p class="bg-light rounded-2 p-2">Kwaliteit lessen bij samen op weg</p>
+    <p class="org-color rounded-2 p-2">Schrijf je meteen in voor een intake!</p>
+</div>
+
+<div class="container d-flex justify-content-evenly mt-3">
+    <div class="bg-light rounded-3 p-3" style="max-width: 450px; height: 325px;">
+        <p>Rijschool Samen op Weg is een rijschool die het anders doet. Jarenlange ervaring in het vak heeft ons geleerd dat veel rijscholen niet efficiënt te werk gaan.
+            Het gebeurt te vaak dat leerlingen grote bedragen neerleggen voor lespakketten die niet passen bij hun vaardigheden en behoeften.
+            Zo loopt u het risico dat u veel tijd en geld kwijt bent, om uiteindelijk alsnog zonder rijbewijs de deur uit te lopen – of te fietsen.
+            Dit systeem levert rijscholen gigantisch veel winst op, maar is voor u als klant ontzettend onvoordelig. 
+            wij zorgen ervoor dat dit niet gebeurd.
+        </p>
+    </div>
+    <div class="bg-light rounded-3 p-3" style="max-width: 450px; height: 350px;">
+        <p>Om zoveel mogelijk uit uw lessen te halen zit u altijd in de auto met één à twee andere leerlingen.
+            Zo spendeert u nog meer tijd in de auto, wat ervoor zorgt dat u zich meer op uw gemak voelt en met meer zekerheid achter het stuur zit.
+            Daarnaast doet u nuttige kennis en rijvaardigheid op dankzij de feedback die uw medeleerlingen van de instructeur krijgen.
+            Tijdens de gevarieerde lessen zorgen onze instructeurs dat u leert omgaan met een groot aantal verschillende scenario’s om zo optimaal voorbereid de weg op te gaan.
+            Deze manier van rijden bereidt u bijzonder goed voor op het CBR rijexamen.
+        </p>
+    </div>
+    <div class="bg-primary rounded-3 p-3 text-light" style="max-width: 450px;">
+        <form>
+            <label for="name" class="form-label">Naam</label>
+            <input type="text" class="form-control" id="NaamInput" placeholder="Naam">
+            <label for="telefoon" class="form-label">Telefoon</label>
+            <input type="tel" class="form-control" id="NummerInput" placeholder="Telefoon nmr">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="naam@voorbeeld.com">
+            <label for="woonplaats" class="form-label">Woonplaats</label>
+            <input type="text" class="form-control" id="WoonplaatsInput" placeholder="Woonplaats">
+            <label for="calendar" class="form-label">Calendar</label>
+            <input type="text" class="form-control datepicker" id="CalendarInput" placeholder="Select date">
+        </form>
+        <button id="plan-intake" class="btn btn-bg rounded-2 mt-3 text-light w-100">Plan je intake</button>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-evenly mt-3">
+    <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel" style="max-width: 50%;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/audi.png" class="d-block w-100" alt="img1">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/audi.png" class="d-block w-100" alt="img2">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/audi.png" class="d-block w-100" alt="img3">
+            </div>
         </div>
     </div>
+    <div class="d-flex justify-content-center mt-2 bg-light w-50" id="google-reviews-container">
+        <h3>Google Reviews</h3>
+        <img class="logo" src="/images/logo.png" alt="Rijschool Logo">
+        <div id="reviews-list">
+
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded shadow-lg text-center hover-effect">
+                <h4 class="mb-3 font-weight-bold">Starter Pakket</h4>
+                <div class="h3 mb-3">€50 per les</div>
+                <a href="#" class="btn btn-light bg-primary text-light btn-block mb-3 shadow-sm">Start mijn opleiding</a>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-car"></i> 10 rijlessen van 120 minuten</li>
+                    <li><i class="fas fa-tachometer-alt"></i>5 verschillende lesa dagen</li>
+                    <li><i class="fas fa-check-circle"></i> CBR examen</li>
+                    <li><i class="fas fa-shield-alt"></i> Examen garantie</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded shadow-lg text-center hover-effect">
+                <h4 class="mb-3 font-weight-bold">Avond/weekend Pakket</h4>
+                <div class="h3 mb-3">€55 per les</div>
+                <a href="#" class="btn btn-light bg-primary text-light btn-block mb-3 shadow-sm">Start mijn opleiding</a>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-car"></i> 20 rijlessen van 60 minuten</li>
+                    <li><i class="fas fa-calendar-alt"></i> 7 verschillende les dagen</li>
+                    <li><i class="fas fa-check-circle"></i> CBR examen</li>
+                    <li><i class="fas fa-shield-alt"></i> Examen garantie</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded shadow-lg text-center hover-effect">
+                <h4 class="mb-3 font-weight-bold">spoed Pakket</h4>
+                <div class="h3 mb-3">€50 per les</div>
+                <a href="#" class="btn btn-light bg-primary text-light btn-block mb-3 shadow-sm">Start mijn opleiding</a>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-car"></i> 10 rijlessen van 120 minuten</li>
+                    <li><i class="fas fa-calendar-alt"></i>  Gespecialiseerd voor snel je rijbewijs behalen</li>
+                    <li><i class="fas fa-check-circle"></i> CBR examen</li>
+                    <li><i class="fas fa-shield-alt"></i> Examen garantie</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
