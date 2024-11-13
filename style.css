@@ -69,6 +69,22 @@ p {
     transform: translateY(-3px);
 }
 
+#popup {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    max-width: 280px;
+    border-radius: 8px;
+}
+
+#popup.show {
+    right: 20px;
+}
+
 @media (max-width: 768px) {
     .background-img {
         background-attachment: scroll;
