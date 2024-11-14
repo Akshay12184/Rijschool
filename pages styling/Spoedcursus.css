@@ -1,0 +1,12 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+.custom-bg {
+    background-color: #d4e9ff;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
