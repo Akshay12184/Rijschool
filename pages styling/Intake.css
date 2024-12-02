@@ -1,3 +1,6 @@
+body {
+    background-color: #f9f9f9;
+}
 * {
     font-family: 'Merriweather', serif;
 }
@@ -9,4 +12,44 @@
 .logo {
     width: 100px;
     height: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.25rem;
+}
+
+.custom-bg {
+    background-color: #eef6ff;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 0 10px;
+    }
 }
