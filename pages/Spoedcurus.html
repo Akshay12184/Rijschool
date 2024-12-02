@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <!--font-awesome to load some logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="/pages styling/Spoedcursus.css">
 </head>
 <body class="custom-bg">
@@ -22,19 +25,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav d-flex justify-content-around w-100">
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="/index.html">Home</a>
+                        <a class="nav-link text-black fw-bold" href="/index.html"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="/pages/Intake.html">Intake</a>
+                        <a class="nav-link text-black fw-bold" href="/pages/Intake.html"><i class="fas fa-clipboard-list"></i> Intake</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="/pages/Tarieven.html">Tarieven</a>
+                        <a class="nav-link text-black fw-bold" href="/pages/Tarieven.html"><i class="fas fa-tags"></i> Tarieven</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="/pages/Spoedcurus.html">Spoedopleiding en over ons</a>
+                        <a class="nav-link text-black fw-bold" href="/pages/Spoedcurus.html"><i class="fas fa-clock"></i> Spoedopleiding</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="/pages/Locaties.html">Locaties</a>
+                        <a class="nav-link text-black fw-bold" href="/pages/Locaties.html"><i class="fas fa-map-marker-alt"></i> Locaties</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +46,7 @@
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="card shadow-sm rounded">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Onze Spoedopleiding</h2>
@@ -62,12 +65,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm rounded">
-                    <div class="card-body">
+
+            <div class="col-md-6">
+                <div class="card shadow-sm rounded h-100">
+                    <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-center mb-4">Over Rijschool Samen op Weg</h2>
                         <p class="card-text">
                             <strong>“Wij weten dat het anders kan”</strong>
@@ -75,26 +76,33 @@
                         <p class="card-text">
                             Rijschool Samen op Weg is een rijschool die het anders doet. Jarenlange ervaring in het vak heeft ons geleerd dat veel rijscholen niet efficiënt te werk gaan. Het gebeurt te vaak dat leerlingen grote bedragen neerleggen voor lespakketten die niet passen bij hun vaardigheden en behoeften. Zo loopt u het risico dat u veel tijd en geld kwijt bent, om uiteindelijk alsnog zonder rijbewijs de deur uit te lopen – of te fietsen. Dit systeem levert rijscholen gigantisch veel winst op, maar is voor u als klant ontzettend onvoordelig.
                         </p>
-                        <p class="card-text">
-                            Dat moet anders kunnen, wisten wij. In tegenstelling tot andere rijscholen zorgen wij ervoor dat u van tevoren verzekerd bent van het behalen van een rijbewijs, en dat voor één vaste prijs. Rijschool Samen op Weg staat voor kwaliteit. Bij ons krijgt u op een efficiënte manier les, waardoor u het rijden sneller en met meer zekerheid onder de knie krijgt. Dankzij de kleinschalige en persoonlijke benadering krijgt u tijdens uw rijles alle aandacht die u verdient en nodig heeft om zonder problemen af te rijden en vervolgens met een goed gevoel de weg op te gaan.
-                        </p>
-                        <p class="card-text">
-                            De belangrijkste factor is uw eigen motivatie – de rest regelen wij.
-                        </p>
-                        <p class="card-text">
-                            Wilt u meer weten over de missie van Auto Rijschool Samen op Weg en wat wij voor u kunnen betekenen? Neem dan direct contact op.
-                        </p>
-                        <p class="card-text">
-                            <strong>START NU</strong> en neem contact op voor een intake. Wij beantwoorden uw vragen graag!
-                        </p>
-                        <p class="card-text">
-                            Bel <strong>06-15885337</strong> (Ook WhatsApp) of mail: <a href="mailto:info@rijschoolsamenopweg.nl">info@rijschoolsamenopweg.nl</a>
-                        </p>
+                        <!-- Lees Meer knop -->
+                        <div class="collapse" id="leesMeer">
+                            <p class="card-text">
+                                Dat moet anders kunnen, wisten wij. In tegenstelling tot andere rijscholen zorgen wij ervoor dat u van tevoren verzekerd bent van het behalen van een rijbewijs, en dat voor één vaste prijs. Rijschool Samen op Weg staat voor kwaliteit. Bij ons krijgt u op een efficiënte manier les, waardoor u het rijden sneller en met meer zekerheid onder de knie krijgt. Dankzij de kleinschalige en persoonlijke benadering krijgt u tijdens uw rijles alle aandacht die u verdient en nodig heeft om zonder problemen af te rijden en vervolgens met een goed gevoel de weg op te gaan.
+                            </p>
+                            <p class="card-text">
+                                De belangrijkste factor is uw eigen motivatie – de rest regelen wij.
+                            </p>
+                            <p class="card-text">
+                                Wilt u meer weten over de missie van Auto Rijschool Samen op Weg en wat wij voor u kunnen betekenen? Neem dan direct contact op.
+                            </p>
+                            <p class="card-text">
+                                <strong>START NU</strong> en neem contact op voor een intake. Wij beantwoorden uw vragen graag!
+                            </p>
+                            <p class="card-text">
+                                Bel <strong>06-15885337</strong> (Ook WhatsApp) of mail: <a href="mailto:info@rijschoolsamenopweg.nl">info@rijschoolsamenopweg.nl</a>
+                            </p>
+                        </div>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#leesMeer" aria-expanded="false" aria-controls="leesMeer">
+                            Lees meer
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 </body>
 </html>
