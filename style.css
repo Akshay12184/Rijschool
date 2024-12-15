@@ -40,6 +40,31 @@
     opacity: 0.2;
 }
 
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.navbar-container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.navbar {
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
 p {
     box-sizing: border-box;
     padding: 10px;

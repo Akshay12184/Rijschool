@@ -1,6 +1,3 @@
-body {
-    background-color: #f9f9f9;
-}
 * {
     font-family: 'Merriweather', serif;
 }
@@ -25,9 +22,6 @@ body {
     font-size: 1.25rem;
 }
 
-.custom-bg {
-    background-color: #eef6ff;
-}
 
 .form-label {
     font-size: 0.9rem;
@@ -53,6 +47,24 @@ body {
     color: white;
 }
 
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar {
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar-container {
+    width: 100%;
+    background-color: transparent;
+}
 @media (max-width: 768px) {
     .card {
         margin: 0 10px;
